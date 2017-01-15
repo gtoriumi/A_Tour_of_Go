@@ -1,0 +1,11 @@
+hash: cc6402227c470a0d59887fd1250d4b045dd20622459266204683d4c9da43b4f9
+updated: 2017-01-15T23:48:10.046075904+09:00
+imports:
+- name: golang.org/x/tour
+  version: d153aa6df875151e72670741898a3ab7f053097b
+  subpackages:
+  - pic
+  - reader
+  - tree
+  - wc
+testImports: []

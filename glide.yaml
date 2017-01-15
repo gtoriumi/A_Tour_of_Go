@@ -1,0 +1,8 @@
+package: .
+import:
+- package: golang.org/x/tour
+  subpackages:
+  - pic
+  - reader
+  - tree
+  - wc
