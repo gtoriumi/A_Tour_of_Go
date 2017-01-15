@@ -11,7 +11,7 @@ type Fetcher interface {
 
 type FetchedSite struct {
 	sites map[string]int
-	mux sync.Mutex
+	mux   sync.Mutex
 }
 
 func (s *FetchedSite) Regsiter(key string) {
@@ -27,9 +27,9 @@ func (s *FetchedSite) isRegisterd(key string) int {
 }
 
 func Crawl(url string, depth int, fetcher Fetcher) {
- 	sites := FetchedSite{sites: make(map[string]int)}
+	sites := FetchedSite{sites: make(map[string]int)}
 
-	var crawler = func(string, int, Fetcher, chan int){}
+	var crawler = func(string, int, Fetcher, chan int) {}
 	crawler = func(url string, depth int, fetcher Fetcher, ch chan int) {
 		fmt.Println("Enter crawler func: ", url)
 		defer close(ch)

@@ -8,15 +8,15 @@ func fibonacci() func() int {
 	n2 := 1
 
 	return func() int {
-		if count==0 {
+		if count == 0 {
 			count++
 			return n1
-		} else if count==1 {
+		} else if count == 1 {
 			count++
 			return n2
 		}
 
-		ret := n1+n2
+		ret := n1 + n2
 		n1 = n2
 		n2 = ret
 		return ret
